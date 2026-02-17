@@ -1,12 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+NZ+Basic:wght@100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
 :root {
     /* main */
-    --primary: #75983E;
-    --primary-light: #9db866;
-    --primary-dark: #5a7530;
+    --primary: #e8dcc8;
+    --primary-light: #f5f1ea;
+    --primary-dark: #d9c7ad;
     
     /* secondaires */
-    --secondary: #f4e8d0;
-    --secondary-dark: #d9c7ad;
+    --secondary: #75983E;
+    --secondary-dark: #5a7530;
     
     /* neutral */
     --white: #ffffff;
@@ -19,8 +22,6 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-
-
 }
 
 html {
@@ -29,7 +30,29 @@ html {
 }
 
 body {
-    background: #fff;
+    background: url(../ressources/bg.png) no-repeat center center fixed;
+    background-size: cover;
     min-height: 100vh;
     height: 100%;
+}
+
+#title_container {
+    width: 100vw;
+    background-color: rgba(128, 128, 128, 0.24);
+    backdrop-filter: blur(5px);
+}
+
+#main_title {
+    text-align: center;
+    font-size: 200px;
+    font-family: "Bebas Neue", sans-serif;
+    color: rgb(14, 148, 54);
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+#title_food_part {
+    font-family: "Playwrite NZ Basic", cursive;
+    color: #59742e;
+    font-size: 150px;
 }
